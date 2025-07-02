@@ -1,0 +1,32 @@
+/* Footer.css */
+
+.footer {
+  width: 100%;
+  background: rgba(11, 0, 78, 0.9); /* Matches your dark theme */
+  color: #e0e0e0;
+  text-align: center;
+  padding: 22px 0 18px 0;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 -2px 14px rgba(0,0,0,0.09);
+}
+
+.footer p {
+  margin: 0;
+  font-weight: 500;
+  font-family: inherit;
+  letter-spacing: 0.5px;
+  user-select: none;
+}
+
+/* Responsive: reduce padding and font size on small screens */
+@media (max-width: 600px) {
+  .footer {
+    padding: 14px 0 10px 0;
+    font-size: 0.98rem;
+  }
+}

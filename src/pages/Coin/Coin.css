@@ -1,0 +1,155 @@
+/* Coin.css */
+
+.coin {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.coin-name {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.coin-name img {
+  width: 60px;
+  height: 60px;
+}
+
+.coin-name p {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+/* Spinner styles */
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.spin {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  border-top-color: #0b004e;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Coin details section */
+.coin-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.coin-price {
+  background: rgba(255,255,255,0.04);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.coin-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.stat-card {
+  background: rgba(255,255,255,0.03);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.stat-card h4 {
+  color: #a0a0c0;
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+}
+
+.stat-card p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.price-change {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.price-change.positive {
+  color: #4caf50;
+}
+
+.price-change.negative {
+  color: #ff5252;
+}
+
+/* Description section */
+.coin-description {
+  background: rgba(255,255,255,0.04);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.coin-description h3 {
+  color: #fff;
+  margin-top: 0;
+}
+
+.coin-description p {
+  color: #e0e0e0;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .coin-details {
+    grid-template-columns: 1fr;
+  }
+  
+  .coin-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .coin-name {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .coin-name p {
+    font-size: 1.8rem;
+  }
+}
+/* Add to Coin.css */
+.coin-chart {
+  margin-top: 30px;
+  height: 300px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 12px;
+  padding: 20px;
+}
+
